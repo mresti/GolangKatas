@@ -4,6 +4,8 @@ Golang training repository used to practice and learn by solving some common kat
 
 ### List of katas:
 
+* [Fibonacci.](https://medium.com/@chmeese/fibonacci-kata-93773b30dbb2)
+
 ### Executing tests:
 
 This project contains some tests written using [Golang testing](https://golang.org/pkg/testing/). You can easily run the tests by executing:
@@ -11,6 +13,10 @@ This project contains some tests written using [Golang testing](https://golang.o
 ```
 go test -race -v ./...
 ```
+
+If you are using GoLand IDE or any other jetbrains IDE to run your tests you'll need to configure the IDE options adding the following configuration:
+
+    File > Settings > Go > GOPATH > project GOPATH -> Add path for this repository
 
 ### Linter:
 

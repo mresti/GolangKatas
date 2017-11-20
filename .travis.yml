@@ -1,5 +1,5 @@
-sudo: false
 language: go
+sudo: false
 go:
   - 1.7.x
   - 1.8.x
@@ -9,5 +9,13 @@ matrix:
   allow_failures:
     - go: master
   fast_finish: true
-Script:
+
+before_script:
+  - go fmt ./...
+  - go vet $(go list ./...)
+
+script:
   - go test -v -race ./...
+
+after_script:
+  - go build $(go list ./... | grep -v /vendor/)

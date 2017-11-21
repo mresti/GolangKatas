@@ -5,6 +5,7 @@ Golang training repository used to practice and learn by solving some common kat
 ### List of katas:
 
 * [Fibonacci.](https://medium.com/@chmeese/fibonacci-kata-93773b30dbb2)
+* [String Calculator.](http://osherove.com/tdd-kata-1/)
 
 ### Executing tests:
 

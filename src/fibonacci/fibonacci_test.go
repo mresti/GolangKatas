@@ -29,7 +29,7 @@ func TestFibonacci(t *testing.T) {
 func TestSameFibonacci(t *testing.T) {
 	n := 10
 	got := Fibonacci(n)
-	gotRec := FibonacciTailRec(n)
+	gotRec := TailRecursive(n)
 	if got != gotRec {
 		t.Errorf("Fibonacci tail recursive version doesn't returns the same value the regular one does")
 		t.Errorf("Fibonacci(%v) returned %v", n, got)
@@ -52,7 +52,7 @@ func TestFibonacciTailRec(t *testing.T) {
 	for _, test := range tests {
 		testInput := fmt.Sprintf("%v", test.input)
 		t.Run(testInput, func(t *testing.T) {
-			if got := FibonacciTailRec(test.input); got != test.want {
+			if got := TailRecursive(test.input); got != test.want {
 				t.Fatalf("FibonacciTailRec(%v) returned %v, want %v", test.input, got, test.want)
 			}
 		})

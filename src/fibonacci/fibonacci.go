@@ -11,8 +11,8 @@ func Fibonacci(n int) int {
 	}
 }
 
-// FibonacciTailRec calculate Fibonacci tail recursive version
-func FibonacciTailRec(n int) int {
+// TailRecursive calculate Fibonacci tail recursive version
+func TailRecursive(n int) int {
 	return fibonacciTailRecInner(n, 1, 0)
 }
 

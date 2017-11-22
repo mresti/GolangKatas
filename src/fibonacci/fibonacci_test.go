@@ -1,8 +1,8 @@
 package fibonacci
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestFibonacci(t *testing.T) {
@@ -26,7 +26,7 @@ func TestFibonacci(t *testing.T) {
 	}
 }
 
-func TestSameFibonacci(t *testing.T){
+func TestSameFibonacci(t *testing.T) {
 	n := 10
 	got := Fibonacci(n)
 	gotRec := FibonacciTailRec(n)

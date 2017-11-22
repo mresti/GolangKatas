@@ -38,7 +38,7 @@ This repository uses [golint](https://github.com/golang/lint) that is a linter f
 
 ### Go VERSION:
 
-This repository requires Go version 1.7 or greater.
+This repository requires Go version 1.8 or greater.
 
 Developed By
 ------------

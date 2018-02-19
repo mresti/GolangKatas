@@ -25,3 +25,9 @@ script:
   - golint -set_exit_status $(go list ./...) # golint as linter
   - gocyclo -over 15 $GO_FILES               # forbid code with huge functions that 15
   - go test -v -race ./...                   # Run all the tests with the race detector enabled
+
+deploy:
+  provider: script
+  script: curl -X POST https://goreportcard.com/checks -F 'repo=github.com/mresti/GolangKatas'
+  on:
+    branch: master

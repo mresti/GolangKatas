@@ -7,7 +7,7 @@ sudo: false
 # Don't worry! Later we declare that test runs are allowed to fail on Go tip.
 go:
   - 1.9.x
-  - "1.10"
+  - 1.10.x
   - tip
 matrix:
   allow_failures:

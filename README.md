@@ -7,6 +7,7 @@ Golang training repository used to practice and learn by solving some common kat
 * [Fibonacci.](https://medium.com/@chmeese/fibonacci-kata-93773b30dbb2)
 * [String Calculator.](http://osherove.com/tdd-kata-1/)
 * [Tennis.](http://codingdojo.org/kata/Tennis/)
+* [Greeting.](https://github.com/testdouble/contributing-tests/wiki/Greeting-Kata)
 
 ### Executing tests:
 
@@ -24,12 +25,9 @@ If you are using GoLand IDE or any other jetbrains IDE to run your tests you'll 
 
     File > Settings > Go > GOROOT > Add path for binary Go release
 
-
 ####GOPATH
 
     File > Settings > Go > GOPATH > project GOPATH -> Add path for this repository
-
-
 
 If you wanna debug some test using debug mode using GoLand IDE with the before steps are very easy.
 
